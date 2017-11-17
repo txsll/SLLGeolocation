@@ -9,7 +9,9 @@ The two libraries can be loaded via `<script>` tags before loading the `SLLGeolo
 `SLLGeolocation.js` also requires you to have a Google Maps API account so that you can load the Google Maps JavaScript API.
 
 ## Usage
-`SLLGeolocation.js` expects your page to have two HTML elements as noted below. One element is used to store the geolocation results in the elements' `data-` tags, and the other is used as a placeholder for a Google map showing the user's location.
+`SLLGeolocation.js` expects your page to have three HTML elements as noted below. One is a button that will trigger the geolocation prompt, and the other two are used to store the geolocation results in the elements' `data-` tags and to serve as a placeholder for a Google map showing the user's location.
+
+You then use `SLLGeolocation.init()` to initiate the library. The `init()` function sets up a `click` listener for the geolocation button.
 
 Below is a barebones version of your HTML page.
 
@@ -26,5 +28,9 @@ Below is a barebones version of your HTML page.
   <script src="/path/to/your/geoPosition.min.js">
   <script src="https://maps.google.com/maps/api/js?language=en&key=YOUR-API-KEY>
   <script src="/path/to/your/SLLGeolocation.min.js">
+  
+  <script>
+    SLLGeolocation.init();
+  </script>
 </body>
 ```
