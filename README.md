@@ -18,7 +18,10 @@ Below is a barebones version of your HTML page.
 ```
 <!doctype html>
 <html lang="en">
-<head></head>
+<head>
+  <meta charset="utf-8">
+  <title>SLLGeolocation.js</title>
+</head>
 <body>
   <button id="js-get-location-button">determine my location</button>
   <div id="js-geo-results" data-latitude="" data-longitude="" data-geocoded-address=""></div>
