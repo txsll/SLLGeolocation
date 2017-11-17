@@ -33,7 +33,7 @@ Below is a barebones version of what your HTML page will look like.
   
   <script src="/path/to/your/jquery.min.js">
   <script src="/path/to/your/geoPosition.min.js">
-  <script src="https://maps.google.com/maps/api/js?language=en&key=YOUR-API-KEY>
+  <script src="https://maps.google.com/maps/api/js?language=en&key=YOUR-API-KEY">
   <script src="/path/to/your/SLLGeolocation.min.js">
   
   <script>
