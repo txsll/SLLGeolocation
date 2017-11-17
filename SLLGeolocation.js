@@ -5,6 +5,7 @@
 */
 var SLLGeolocation = {
   Errors: {
+    // Error messages to show to the user.
     NO_GEOLOCATION: 'Unfortunately, geolocation is not available on your computer, device, or web browser. Please try using a different browser or internet connection.',
     PERMISSION_DENIED: 'Your location could not be determined because you or your browser have denied permission. Please review your browser settings to ensure you are not automatically denying all geolocation requests.',
     POSITION_UNAVAILABLE: 'Your position is currently unavailable. Please try again, or use a different internet connection if this problem persists.',
@@ -164,8 +165,13 @@ var SLLGeolocation = {
 
   init: function () {
     var $myGeoResults = ('#js-geo-results');
+    var $myButton = $('#js-get-location-button');
 
-    $('#js-get-location-button').on('click', function () {
+    // Remove the 'disabled' property for the button.
+    $myButton.prop('disabled', false);
+
+    // Add a listener to the 'click' event for the button. When clicked, show the AJAX GIF to indicate work is occurring in the background then call the geolocation API.
+    $myButton.on('click', function () {
       var $ajaxImage = $('<img />', {
         'src': '/images/ajax-loader.gif',
         'alt': 'loading...'
