@@ -1,5 +1,5 @@
 # SLLGeolocation
-TxSLL's geolocation script used during online patron registration to make sure the patron is physically located in a given area &mdash; *e.g.*, Texas. The code in this repository serves only as a barebones starting point. You would need to integrate this into your website as appropriate.
+TxSLL's geolocation script used during online patron registration to make sure the patron is physically located in a given area &mdash; *e.g.*, Texas. The code in this repository serves only as a barebones starting point. You would need to integrate this into your website as appropriate and, depending on your needs, include security measures.
 
 For example, if your website has an online registration form, you could initially load that form as disabled and hidden. Once the user geolocates to the correct area, you can enable and display the rest of the form for the user to submit. As part of that submission, you can write code to incorporate the geolocation data received. **That is not included in this library and must be added by you.**
 
@@ -43,6 +43,6 @@ Below is a barebones version of what your HTML page will look like.
 </html>
 ```
 
-## Security
+## Security and Disclaimer
 
-This is not a secure, foolproof method of geolocating a user! Malicious users could bypass your geolocation requirements or spoof geolocation data. You should add other security measures to prevent users from manipulating the form in their browser or manipulating the data to be sent via your form. You should also have server-side security measures when processing the form.
+This is not a secure, foolproof method of geolocating a user! That is impossible. Malicious users could bypass your geolocation requirements or spoof geolocation data. You should add other security measures to prevent users from manipulating the form in their browser or manipulating the data to be sent via your form. You should also have server-side security measures when processing the form.
