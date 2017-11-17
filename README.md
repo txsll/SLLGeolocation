@@ -13,7 +13,7 @@ The two libraries can be loaded via `<script>` tags before loading the `SLLGeolo
 
 You then use `SLLGeolocation.init()` to initiate the library. The `init()` function sets up a `click` listener for the geolocation button.
 
-Below is a barebones version of your HTML page.
+Below is a barebones version of what your HTML page will look like.
 
 ```
 <!doctype html>
@@ -36,4 +36,5 @@ Below is a barebones version of your HTML page.
     SLLGeolocation.init();
   </script>
 </body>
+</html>
 ```
